@@ -1,0 +1,25 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "Mute Ads on JioCinema",
+  "version": "0.1",
+  "description": "Mute ads on JioCinema live cricket matches",
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.jiocinema.com/*"
+      ],
+      "js": [
+        "muteAds.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
